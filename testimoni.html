@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni Pelanggan</title>
+    <style> 
+     /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+          } 
+
+        .navbar {
+          margin: auto;
+          display: flex;
+          align-items: center;
+          background-color: #333;
+          justify-content: flex-start;
+          font-size: 18px;
+        }
+        .logo {
+          width: 100px;
+          cursor: pointer;
+        }
+
+         .brand-name {
+          color: white;
+          text-decoration: none; 
+          font-size: 24px; 
+          font-weight: bold; 
+        }
+
+        .navbar ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          margin-left: 100px;
+        }
+  
+        .navbar ul li a {
+          list-style: none;
+          display: inline-block;
+          color: white;
+          text-decoration: none;
+          margin: 20px;
+          margin-left: 100px;
+        }
+        
+        .testimoni {
+            padding: 2rem;
+            background-color: #f8f8f8;
+        }
+
+        .testimoni h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .testimoni-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .testimoni-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimoni-item blockquote {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .testimoni-item p {
+            text-align: right;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <img src="logo.png" class="logo">
+        <a class="brand-name">Toko Lies Jaya</a>
+        
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Tentang Produk</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="testimoni.html">Testimoni</a></li>
+        </ul>
+    </nav>
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="testimoni">
+        <h1>Testimoni Pelanggan</h1>
+        <h4>Apa kata mereka tentang produk dan layanan yang kami sediakan</h4>
+        <div class="testimoni-grid">
+            <div class="testimoni-item">
+                <blockquote>"Produk yang luar biasa, sangat direkomendasikan!"</blockquote>
+                <p>- Pelanggan 1</p>
+            </div>
+            <div class="testimoni-item">
+                <blockquote>"Kualitas terbaik dengan harga yang terjangkau."</blockquote>
+                <p>- Pelanggan 2</p>
+            </div>
+            <div class="testimoni-item">
+                <blockquote>"Pelayanan pelanggan yang sangat memuaskan."</blockquote>
+                <p>- Pelanggan 3</p>
+            </div>
+            <div class="testimoni-item">
+                <blockquote>"Saya pasti akan membeli lagi di sini!"</blockquote>
+                <p>- Pelanggan 4</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

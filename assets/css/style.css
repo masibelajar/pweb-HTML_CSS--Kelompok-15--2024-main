@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    justify-content: flex-start;
+    font-size: 18px;
+  }
+  
+  .logo{
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .brand-name {
+    color: white;
+    text-decoration: none; 
+    font-size: 24px; 
+    font-weight: bold; 
+  }
+
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: 100px;
+  }
+  
+  .navbar ul li a {
+    list-style: none;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    margin-left: 100px;
+  }
+  
+  .landing-page {
+    background-image: url(background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .cta-button {
+    background-color: #ff5722;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Layanan Section */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  /* Galeri Section */
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .flex-container img {
+    max-width: 30%;
+    height: auto;
+  }
+  
+  /* Testimoni Section */
+  .testimoni {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f8f8;
+  }
+  
+  .testimoni h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .testimoni blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+  }
+  
+  .testimoni-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .testimoni-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Kontak Section */
+  .kontak {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .kontak .cta-button {
+    background-color: #00c853;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .flex-container img {
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
